@@ -8,6 +8,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
+  overflow: hidden;
 }
 .header {
   width: 100%;
@@ -50,19 +51,28 @@ body {
 }
 .main {
   padding: 20px 10px;
+  width: 100%;
   background-color: #000000;
   color: #ffff;
+  overflow: hidden;
 }
 .main__shipping-details {
   display: flex;
-  font-size: 0.4rem;
+  width: 100%;
+  margin: 0 5px;
+  justify-content: center;
+  /* font-size: 0.4rem; */
+  font-size: 1.7vw;
+}
+.main__shipping-details p{
+    margin: 0 5px;
 }
 .main__shipping-details a {
   color: #ffff;
   text-decoration: none;
 }
 #shipping-details__ios-airplane {
-  width: 10px;
+  width: 2%;
   margin-right: 3px;
 }
 
@@ -71,12 +81,38 @@ body {
   text-align: center;
   letter-spacing: 0.008em;
 }
+.the-sections__collection h2,
+.the-sections__collection h3 {
+  padding: 5px 0;
+}
 #collection__shopping-btn {
-  margin: 10px;
+  margin: 15px;
   padding: 8px;
+  width: 100px;
   background-color: #32353c;
   color: #ffff;
   border: none;
-  border-radius: 2px;
+  border-radius: 3px;
   text-transform: capitalize;
+}
+
+.collection_products {
+  display: grid;
+  justify-content: space-between;
+  column-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px 20px;
+}
+.collection_products_container {
+  /* width: 30%; */
+  /* margin: 10px; */
+  background-color: #b7b7b7;
+  background-image: linear-gradient(to bottom right, #b7b7b7, #f9f9f9);
+}
+#collection_products_container-green {
+  background-color: #008432;
+  background-image: linear-gradient(to bottom right, #008432, #002e05);
+}
+.collection_products_container img {
+  width: 100%;
 }
