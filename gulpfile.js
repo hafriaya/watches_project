@@ -3,14 +3,17 @@ const { src, dest, series, watch } = require("gulp");
 //styles
 const scss = require("gulp-sass")(require("sass"));
 const autoprefixer = require("gulp-autoprefixer");
+// import autoprefixer from 'gulp-autoprefixer';
 const cssMinify = require("gulp-clean-css");
 
 function styles() {
-  return src("./frontend/src/styles/**/*.scss")
-    .pipe(scss())
-    .pipe(autoprefixer("last 2 version"))
-    .pipe(cssMinify())
-    .pipe(dest("./frontend/dist/styles/"));
+  return (
+    src("./frontend/src/styles/**/*.scss")
+      .pipe(scss())
+      .pipe(autoprefixer("last 2 version"))
+      .pipe(cssMinify())
+      .pipe(dest("./frontend/dist/styles/"))
+  );
 }
 
 //scripts
