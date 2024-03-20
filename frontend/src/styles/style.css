@@ -8,7 +8,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
-  overflow: hidden;
 }
 .header {
   width: 100%;
@@ -54,7 +53,6 @@ body {
   width: 100%;
   background-color: #000000;
   color: #ffff;
-  overflow: hidden;
 }
 .main__shipping-details {
   display: flex;
@@ -64,8 +62,8 @@ body {
   /* font-size: 0.4rem; */
   font-size: 1.7vw;
 }
-.main__shipping-details p{
-    margin: 0 5px;
+.main__shipping-details p {
+  margin: 0 5px;
 }
 .main__shipping-details a {
   color: #ffff;
@@ -77,15 +75,18 @@ body {
 }
 
 .the-sections {
-  padding: 50px 0;
+  padding: 20px 0;
   text-align: center;
   letter-spacing: 0.008em;
 }
-.the-sections__collection h2,
-.the-sections__collection h3 {
+.the-sections section {
+  margin: 50px 0;
+}
+.sub-heading,
+.main-heading {
   padding: 5px 0;
 }
-#collection__shopping-btn {
+.shopping-btn {
   margin: 15px;
   padding: 8px;
   width: 100px;
@@ -96,23 +97,67 @@ body {
   text-transform: capitalize;
 }
 
-.collection_products {
+.collection__products {
   display: grid;
-  justify-content: space-between;
-  column-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  /* column-gap: 20px;
+  row-gap: 12px; */
   margin: 10px 20px;
 }
-.collection_products_container {
+.collection__products_container {
   /* width: 30%; */
   /* margin: 10px; */
   background-color: #b7b7b7;
   background-image: linear-gradient(to bottom right, #b7b7b7, #f9f9f9);
 }
-#collection_products_container-green {
+#collection__products_container-green {
   background-color: #008432;
   background-image: linear-gradient(to bottom right, #008432, #002e05);
 }
-.collection_products_container img {
+.collection__products_container img {
   width: 100%;
+}
+.collection__products__descr__details {
+  text-align: left;
+  font-size: 0.5rem;
+  font-weight: 100;
+}
+.product_price {
+  margin: 5px 0;
+  color: #343434;
+}
+
+.new-arrival__products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin: 10px 20px;
+  grid-template-rows: auto 1fr;
+}
+.new-arrival__desc{
+    margin: 0 20px;
+}
+.new-arrival__product-container {
+  text-align: left;
+  font-size: 0.7rem;
+  font-weight: 100;
+}
+.new-arrival__product-container__detail {
+  margin-top: 15px;
+}
+#new-arrival__main-img__model21 {
+  height: 100%;
+}
+.new-arrival__container img {
+  width: 100%;
+}
+.new-arrival__product_price{
+    display: flex;
+}
+.new-arrival__product_price p{
+    margin-right: 8px;
+}
+#product_price__old{
+    text-decoration-line: line-through;
 }
