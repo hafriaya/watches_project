@@ -54,6 +54,7 @@ body {
   width: 100%;
   background-color: #000000;
   color: #ffff;
+  overflow-x: hidden;
 }
 .main__shipping-details {
   display: flex;
@@ -81,7 +82,8 @@ body {
   letter-spacing: 0.008em;
 }
 .the-sections section {
-  margin: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .sub-heading,
 .main-heading {
@@ -202,4 +204,73 @@ body {
 }
 .insta-posts__slider {
   margin-top: 40px;
+}
+.the-sections__fashion {
+  border-top: 1px solid #707070;
+  margin: 10px 30px;
+}
+.brand__social-media {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 20px 50px;
+}
+.brand__logo {
+  text-align: left;
+}
+.brand__social-media img {
+  width: 10px;
+}
+.brand__social-media a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #707070;
+  font-size: 0.8rem;
+}
+.fashion__articles__container {
+  margin-top: 30px;
+}
+.fashion__article {
+  margin: 20px 0;
+}
+.fashion__article__bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 25vh;
+}
+.fashion__article__bg-1 {
+  background-image: url(../images/backgrounds/bg1.png);
+}
+.fashion__article__bg-2 {
+  background-image: url(../images/backgrounds/bg2.png);
+}
+.fashion__article__bg-3 {
+  background-image: url(../images/backgrounds/bg3.png);
+}
+.fashion__article__bg-4 {
+  background-image: url(../images/backgrounds/bg4.png);
+  background-position: right;
+  background-color: #b79b6c;
+  margin: 15px 0;
+}
+.fashion__article__desc {
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.fashion__sub-heading,
+.fashion__main-heading {
+  padding: 5px 0;
+  font-weight: 400;
+}
+.read-more_btn {
+  margin: 15px 0;
+  padding: 8px;
+  width: 100px;
+  background-color: #32353c;
+  color: #ffff;
+  border: none;
+  border-radius: 3px;
+  text-transform: capitalize;
 }
