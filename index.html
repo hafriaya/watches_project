@@ -9,7 +9,11 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <div class=""></div>
+        <div class="header__language-side">
+          <select name="languages" id="anguages">
+            <option value="english">english</option>
+          </select>
+        </div>
         <nav class="header__nav-bar nav-bar">
           <a href="#home">home</a>
           <a href="#laSuportive">la Suportive</a>
@@ -25,7 +29,12 @@
           <a href="#aboutUs">about Us</a>
           <a href="#retailers">retailers</a>
         </nav>
-        <div class=""></div>
+        <div class="header__cart-side">
+          <div class="header__cart-side__total">0.00$</div>
+          <div class="header__cart-side__img-cart">
+            <img src="./frontend/src/images/icon/cart-img.png" alt="cart-img" />
+          </div>
+        </div>
       </div>
       <div class="haeder__bg-container"></div>
     </header>
@@ -44,40 +53,45 @@
       </div>
       <div class="the-sections">
         <section class="the-sections__collection">
-          <h3 class="sub-heading">Collection AW 2019</h3>
-          <h2 class="main-heading">Nouveautés 2023 $14.99</h2>
-          <button class="shopping-btn">go shopping</button>
-          <div class="collection__products">
-            <div
-              class="collection__products_container"
-              id="collection__products_container-green"
-            >
-              <img
-                src="./frontend/src/images/products/model11.png"
-                alt="model11"
-              />
+          <div class="collection__container">
+            <div class="collection__desc">
+              <h3 class="sub-heading">Collection AW 2019</h3>
+              <h2 class="main-heading">Nouveautés 2023 $14.99</h2>
+              <button class="shopping-btn">go shopping</button>
             </div>
-            <div class="collection__products_container">
-              <img
-                src="./frontend/src/images/products/model12.png"
-                alt="model12"
-              />
-            </div>
-            <div class="collection__products_container">
-              <img
-                src="./frontend/src/images/products/model13.png"
-                alt="model13"
-              />
-            </div>
-            <div class="collection__products__descr__details">
-              <p>Limited Edition Titanium</p>
-              <h5>La Sportive</h5>
-              <p class="collection__product_price product_price">120.00$</p>
-            </div>
-            <div class="collection__products__descr__details">
-              <p>Le Régulateur Louis Erard x Label Noir</p>
-              <h5>Excellence</h5>
-              <p class="collection__product_price product_price">68.00$</p>
+            <div class="collection__products">
+              <div
+                class="collection__products_container"
+                id="collection__products_container-green"
+              >
+                <img
+                  src="./frontend/src/images/products/model11.png"
+                  alt="model11"
+                />
+                
+              </div>
+              <div class="collection__products_container">
+                <img
+                  src="./frontend/src/images/products/model12.png"
+                  alt="model12"
+                />
+              </div>
+              <div class="collection__products_container">
+                <img
+                  src="./frontend/src/images/products/model13.png"
+                  alt="model13"
+                />
+              </div>
+              <div class="collection__products__descr__details">
+                <p>Limited Edition Titanium</p>
+                <h5>La Sportive</h5>
+                <p class="collection__product_price product_price">120.00$</p>
+              </div>
+              <div class="collection__products__descr__details">
+                <p>Le Régulateur Louis Erard x Label Noir</p>
+                <h5>Excellence</h5>
+                <p class="collection__product_price product_price">68.00$</p>
+              </div>
             </div>
           </div>
         </section>
@@ -118,7 +132,9 @@
         </section>
         <section class="the-sections__horror">
           <div class="horror__container">
-            <div class="horror__container__bg"></div>
+            <div class="horror__container__bg">
+              <!-- <img src="./frontend/src/images/backgrounds/horror-bg.png" alt="horror-bg"> -->
+            </div>
             <div class="horror__desc">
               <h3 class="sub-heading">New Arrival 2019</h3>
               <h2 class="main-heading">
@@ -195,7 +211,12 @@
             </div>
             <div class="fashion__articles__container">
               <article class="fashion__article fashion__article-1">
-                <div class="fashion__article__bg fashion__article__bg-1"></div>
+                <div class="fashion__article__bg fashion__article__bg-1">
+                  <img
+                    src="./frontend/src/images/backgrounds/bg1.png"
+                    alt="bg1"
+                  />
+                </div>
                 <div class="fashion__article__desc">
                   <h3 class="fashion__sub-heading">SEOUL FASHION</h3>
                   <h2 class="fashion__main-heading">
@@ -205,7 +226,12 @@
                 </div>
               </article>
               <article class="fashion__article fashion__article-2">
-                <div class="fashion__article__bg fashion__article__bg-2"></div>
+                <div class="fashion__article__bg fashion__article__bg-2">
+                  <img
+                    src="./frontend/src/images/backgrounds/bg2.png"
+                    alt="bg2"
+                  />
+                </div>
                 <div class="fashion__article__desc">
                   <h3 class="fashion__sub-heading">SEOUL FASHION</h3>
                   <h2 class="fashion__main-heading">
@@ -215,7 +241,12 @@
                 </div>
               </article>
               <article class="fashion__article fashion__article-3">
-                <div class="fashion__article__bg fashion__article__bg-3"></div>
+                <div class="fashion__article__bg fashion__article__bg-3">
+                  <img
+                    src="./frontend/src/images/backgrounds/bg3.png"
+                    alt="bg3"
+                  />
+                </div>
                 <div class="fashion__article__desc">
                   <h3 class="fashion__sub-heading">SEOUL FASHION</h3>
                   <h2 class="fashion__main-heading">
@@ -225,7 +256,13 @@
                 </div>
               </article>
               <article class="fashion__article fashion__article-4">
-                <div class="fashion__article__bg fashion__article__bg-4"></div>
+                <div class="fashion__article__bg fashion__article__bg-4">
+                  <div class="fashion__article__simple-bg"></div>
+                  <img
+                    src="./frontend/src/images/backgrounds/bg4.png"
+                    alt="bg4"
+                  />
+                </div>
                 <div
                   class="fashion__article__desc fashion__article__bg-4__desc"
                 >
@@ -275,7 +312,7 @@
     </main>
     <footer class="footer">
       <div class="footer__details_container">
-        <div class="footer__detail">
+        <div class="footer__detail footer__detail__contact">
           <h3>Contact Info</h3>
           <p>Phone: +4 (509) 120 6705</p>
           <p>
@@ -284,14 +321,29 @@
           </p>
           <div class="payments_datail">
             <p>We accept:</p>
-            <img src="./frontend/src/images/icon/mastercard_inverse.png" alt="mastercard_inverse">
-            <img src="./frontend/src/images/icon/jcb_inverse.png" alt="jcb_inverse">
-            <img src="./frontend/src/images/icon/paypal_inverse.png" alt="paypal_inverse">
-            <img src="./frontend/src/images/icon/visa_inverse.png" alt="visa_inverse">
-            <img src="./frontend/src/images/icon/amazon_inverse.png" alt="amazon_inverse">
+            <img
+              src="./frontend/src/images/icon/mastercard_inverse.png"
+              alt="mastercard_inverse"
+            />
+            <img
+              src="./frontend/src/images/icon/jcb_inverse.png"
+              alt="jcb_inverse"
+            />
+            <img
+              src="./frontend/src/images/icon/paypal_inverse.png"
+              alt="paypal_inverse"
+            />
+            <img
+              src="./frontend/src/images/icon/visa_inverse.png"
+              alt="visa_inverse"
+            />
+            <img
+              src="./frontend/src/images/icon/amazon_inverse.png"
+              alt="amazon_inverse"
+            />
           </div>
         </div>
-        <div class="footer__detail">
+        <div class="footer__detail footer__detail__help">
           <h3>Get Help</h3>
           <p>Delivery Information</p>
           <p>Sale Terms & Conditions</p>
@@ -299,7 +351,7 @@
           <p>Privacy Notice</p>
           <p>Shopping FAQs</p>
         </div>
-        <div class="footer__detail">
+        <div class="footer__detail footer__detail__categories">
           <h3>Popular Categories</h3>
           <p>Coats (45)</p>
           <p>Jeans (278)</p>
