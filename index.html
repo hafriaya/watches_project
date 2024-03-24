@@ -13,6 +13,18 @@
           <select name="languages" id="anguages">
             <option value="english">english</option>
           </select>
+          <div class="search-bar">
+            <label>
+              <input
+                type="search"
+                class="search-field"
+                placeholder="Search …"
+                value=""
+                name="search"
+              />
+            </label>
+            <input type="submit" class="search-submit" value="Search" />
+          </div>
         </div>
         <nav class="header__nav-bar nav-bar">
           <a href="#home">home</a>
@@ -30,9 +42,12 @@
           <a href="#retailers">retailers</a>
         </nav>
         <div class="header__cart-side">
-          <div class="header__cart-side__total">0.00$</div>
+          <div class="header__cart-side__total-price">0.00$</div>
           <div class="header__cart-side__img-cart">
             <img src="./frontend/src/images/icon/cart-img.png" alt="cart-img" />
+            <div class="header__cart-side__total">
+              <p id="header__cart-side__total__number">0</p>
+            </div>
           </div>
         </div>
       </div>
@@ -59,38 +74,52 @@
               <h2 class="main-heading">Nouveautés 2023 $14.99</h2>
               <button class="shopping-btn">go shopping</button>
             </div>
-            <div class="collection__products">
-              <div
-                class="collection__products_container"
-                id="collection__products_container-green"
-              >
-                <img
-                  src="./frontend/src/images/products/model11.png"
-                  alt="model11"
-                />
-                
-              </div>
-              <div class="collection__products_container">
-                <img
-                  src="./frontend/src/images/products/model12.png"
-                  alt="model12"
-                />
-              </div>
-              <div class="collection__products_container">
-                <img
-                  src="./frontend/src/images/products/model13.png"
-                  alt="model13"
-                />
-              </div>
-              <div class="collection__products__descr__details">
-                <p>Limited Edition Titanium</p>
-                <h5>La Sportive</h5>
-                <p class="collection__product_price product_price">120.00$</p>
-              </div>
-              <div class="collection__products__descr__details">
-                <p>Le Régulateur Louis Erard x Label Noir</p>
-                <h5>Excellence</h5>
-                <p class="collection__product_price product_price">68.00$</p>
+            <div class="collection__products__slider">
+              <div class="collection__products">
+                <div
+                  class="collection__products_container"
+                  id="collection__products_container-green"
+                >
+                  <div
+                    class="collection__products_container__product_img"
+                    id="collection__products_container-green__product_img"
+                  >
+                    <img
+                      src="./frontend/src/images/products/model11.png"
+                      alt="model11"
+                    />
+                  </div>
+                  <div class="collection__products__descr__details">
+                    <p>Limited Edition Titanium</p>
+                    <h5>La Sportive</h5>
+                    <p class="collection__product_price product_price">
+                      120.00$
+                    </p>
+                  </div>
+                </div>
+                <div class="collection__products_container">
+                  <div class="collection__products_container__product_img">
+                    <img
+                      src="./frontend/src/images/products/model12.png"
+                      alt="model12"
+                    />
+                  </div>
+                  <div class="collection__products__descr__details">
+                    <p>Le Régulateur Louis Erard x Label Noir</p>
+                    <h5>Excellence</h5>
+                    <p class="collection__product_price product_price">
+                      68.00$
+                    </p>
+                  </div>
+                </div>
+                <div class="collection__products_container">
+                  <div class="collection__products_container__product_img">
+                    <img
+                      src="./frontend/src/images/products/model13.png"
+                      alt="model13"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -132,9 +161,6 @@
         </section>
         <section class="the-sections__horror">
           <div class="horror__container">
-            <div class="horror__container__bg">
-              <!-- <img src="./frontend/src/images/backgrounds/horror-bg.png" alt="horror-bg"> -->
-            </div>
             <div class="horror__desc">
               <h3 class="sub-heading">New Arrival 2019</h3>
               <h2 class="main-heading">
@@ -142,6 +168,9 @@
                 <span class="main-heading__price">$98.99</span>
               </h2>
               <button class="shopping-btn">go shopping</button>
+            </div>
+            <div class="horror__container__bg">
+              <!-- <img src="./frontend/src/images/backgrounds/horror-bg.png" alt="horror-bg"> -->
             </div>
           </div>
         </section>

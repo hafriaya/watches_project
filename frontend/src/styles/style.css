@@ -42,12 +42,20 @@ body {
   width: 100%;
   text-transform: capitalize;
 }
+.header__language-side {
+  display: flex;
+  align-items: center;
+}
 .header__language-side select {
   padding: 5px 8px;
   border: none;
-  /* background-color: rgb(0, 0, 0, .1); */
+  background-color: rgb(0, 0, 0, .1);
   color: #32353c;
   text-transform: capitalize;
+  border-radius: 5px;
+}
+.search-bar{
+  display: none;
 }
 .header__nav-bar a {
   color: #ffff;
@@ -67,15 +75,26 @@ body {
   color: #000000;
   align-items: center;
 }
-.header__cart-side__total{
+.header__cart-side__total-price {
   display: none;
 }
-.header__cart-side__img-cart{
+.header__cart-side__img-cart {
   width: 50px;
   margin-left: 10px;
+  position: relative;
 }
 .header__cart-side img {
   width: 100%;
+}
+.header__cart-side__total {
+  position: absolute;
+  padding: 2px 5px;
+  top: 0;
+  right: -4px;
+  background-color: #b79b6c;
+  color: #ffff;
+  border-radius: 50%;
+  font-size: 0.8rem;
 }
 .main {
   padding: 20px 0;
@@ -135,30 +154,26 @@ body {
 
 .collection__products {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* grid-gap: 20px; */
+  grid-template-columns: 1fr;
   column-gap: 20px;
   row-gap: 12px;
-  /* margin: 10px 30px; */
   margin: 10px 10%;
 }
-.collection__products_container {
-  /* width: 30%; */
-  /* margin: 10px; */
+.collection__products_container__product_img {
   background-color: #b7b7b7;
   background-image: linear-gradient(to bottom right, #b7b7b7, #f9f9f9);
+  margin-bottom: 10px;
 }
-#collection__products_container-green {
+#collection__products_container-green__product_img {
   background-color: #008432;
   background-image: linear-gradient(to bottom right, #008432, #002e05);
 }
 .collection__products_container img {
-  /* width: 100%; */
   width: 20vw;
 }
 .collection__products__descr__details {
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   font-weight: 100;
 }
 .collection__products__descr__details p {
@@ -208,6 +223,7 @@ body {
 }
 .horror__container {
   position: relative;
+  margin-top: 150px;
 }
 .horror__container__bg {
   background-image: url(../images/backgrounds/horror-bg.png);
@@ -218,9 +234,9 @@ body {
   /* height: 20vh; */
   height: calc(50vh - 100px);
 }
-.horror__desc {
+/* .horror__desc {
   margin: 10px;
-}
+} */
 .insta-posts__container {
   margin: 10px 0;
   min-height: 150px;
@@ -463,7 +479,7 @@ body {
   .header__nav-bar a:hover {
     color: #b79b6c;
   }
-  .header__cart-side__total{
+  .header__cart-side__total-price {
     display: block;
   }
   .logo_container {
@@ -474,6 +490,9 @@ body {
   }
   .collection__products__descr__details {
     font-size: 1rem;
+  }
+  .collection__products {
+    grid-template-columns: repeat(3, 1fr);
   }
   .new-arrival__container {
     display: flex;
@@ -493,7 +512,7 @@ body {
     font-size: 1rem;
   }
   .horror__container__bg {
-    height: calc(70vh - 100px);
+    height: calc(60vh - 100px);
   }
   .brand__social-media {
     margin: 30px 50px;
@@ -533,9 +552,52 @@ body {
 @media screen and (min-width: 1000px) {
   .header__container {
     height: 80px;
+    overflow: hidden;
+  }
+  .header__language-side select {
+    width: 100px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+  .search-bar{
+    margin: 0 10px;
+    display: block;
+  }
+  .search-field {
+    background-color: transparent;
+    background-image: url(../images/icon/ios-search.png);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    margin: 3px 0;
+    padding: 0 0 0 34px;
+    position: absolute;
+    top: 46%;
+    transform: translateY(-50%);
+    -webkit-transition: width 400ms ease, background 400ms ease;
+    transition: width 400ms ease, background 400ms ease;
+    width: 0px;
+    cursor: pointer;
+  }
+  .search-field:focus {
+    background-color: #ffff;
+    border: 2px solid rgb(0, 0, 0, .1);
+    cursor: text;
+    outline: 0;
+    width: 250px;
+    color: #000000;
+  }
+  .search-submit {
+    display: none;
   }
   .header__nav-bar {
-    font-size: 1rem;
+    font-size: 1.1rem;
+  }
+  .header__nav-bar a {
+    margin: 20px;
   }
   .haeder__bg-container {
     height: 70vh;
@@ -584,7 +646,7 @@ body {
   .horror__desc .main-heading {
     font-size: 2.4rem;
   }
-  .horror__desc .shopping-btn{
+  .horror__desc .shopping-btn {
     width: 200px;
     font-size: 1.2rem;
   }
