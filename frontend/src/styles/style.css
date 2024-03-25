@@ -49,12 +49,12 @@ body {
 .header__language-side select {
   padding: 5px 8px;
   border: none;
-  background-color: rgb(0, 0, 0, .1);
+  background-color: rgb(0, 0, 0, 0.1);
   color: #32353c;
   text-transform: capitalize;
   border-radius: 5px;
 }
-.search-bar{
+.search-bar {
   display: none;
 }
 .header__nav-bar a {
@@ -79,7 +79,7 @@ body {
   display: none;
 }
 .header__cart-side__img-cart {
-  width: 50px;
+  width: 40px;
   margin-left: 10px;
   position: relative;
 }
@@ -442,7 +442,7 @@ body {
 .website__rights {
   text-align: right;
 }
-
+/* media screen for 600px */
 @media screen and (min-width: 600px) {
   .fashion__articles__container {
     display: grid;
@@ -479,11 +479,18 @@ body {
   .header__nav-bar a:hover {
     color: #b79b6c;
   }
-  .header__cart-side__total-price {
-    display: block;
+  .header__nav-bar a:active {
+    color: #b79b6c;
   }
   .logo_container {
     margin: 0 10px;
+    width: 120px;
+  }
+  .header__cart-side__total-price {
+    display: block;
+  }
+  .header__cart-side__img-cart {
+    width: 50px;
   }
   .main__shipping-details {
     font-size: 0.75rem;
@@ -549,6 +556,7 @@ body {
     border: none;
   }
 }
+/* media screen for 1000px */
 @media screen and (min-width: 1000px) {
   .header__container {
     height: 80px;
@@ -559,7 +567,7 @@ body {
     height: 40px;
     font-size: 0.9rem;
   }
-  .search-bar{
+  .search-bar {
     margin: 0 10px;
     display: block;
   }
@@ -570,10 +578,12 @@ body {
     background-repeat: no-repeat;
     background-size: 20px 20px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
     height: 40px;
     margin: 3px 0;
     padding: 0 0 0 34px;
+    font-size: 0.9rem;
     position: absolute;
     top: 46%;
     transform: translateY(-50%);
@@ -584,7 +594,7 @@ body {
   }
   .search-field:focus {
     background-color: #ffff;
-    border: 2px solid rgb(0, 0, 0, .1);
+    border: 2px solid rgb(0, 0, 0, 0.1);
     cursor: text;
     outline: 0;
     width: 250px;
@@ -598,6 +608,9 @@ body {
   }
   .header__nav-bar a {
     margin: 20px;
+  }
+  .logo_container {
+    width: 140px;
   }
   .haeder__bg-container {
     height: 70vh;
