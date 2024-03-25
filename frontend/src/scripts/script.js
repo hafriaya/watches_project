@@ -1,7 +1,7 @@
 var timeOut = 2000;
 var slideIndex = 0;
 var autoOn = true;
-if ((window.innerWidth < 700)) {
+if (window.innerWidth < 700) {
   autoSlides();
 
   function autoSlides() {
