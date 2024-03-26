@@ -125,7 +125,8 @@ body {
 }
 
 .the-sections {
-  padding: 20px 0;
+  /* padding: 20px 0; */
+  margin: 100px 0;
   text-align: center;
   letter-spacing: 0.008em;
 }
@@ -162,6 +163,9 @@ body {
   background-color: #b7b7b7;
   background-image: linear-gradient(to bottom right, #b7b7b7, #f9f9f9);
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #collection__products_container-green__product_img {
   background-color: #008432;
@@ -290,7 +294,7 @@ body {
 }
 .horror__container {
   position: relative;
-  margin-top: 150px;
+  /* margin-top: 150px; */
 }
 .horror__container__bg {
   background-image: url(../images/backgrounds/horror-bg.png);
@@ -299,13 +303,13 @@ body {
   background-size: contain;
   width: 100%;
   /* height: 20vh; */
-  height: calc(50vh - 100px);
+  height: 50vh;
 }
 /* .horror__desc {
   margin: 10px;
 } */
 .insta-posts__container {
-  margin: 10px 0;
+  /* margin: 10px 0; */
   min-height: 150px;
 }
 .insta-posts__path {
@@ -327,7 +331,7 @@ body {
 }
 .the-sections__fashion {
   border-top: 1px solid #707070;
-  margin: 10px 30px;
+  margin: auto 30px;
 }
 .brand__social-media {
   display: grid;
@@ -352,13 +356,13 @@ body {
   margin-top: 30px;
 }
 .fashion__article {
-  margin: 20px 0;
+  /* margin: 20px 0; */
   position: relative;
 }
 .fashion__article__bg {
   position: relative;
   width: auto;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .fashion__article__bg img {
   width: 100%;
@@ -372,7 +376,8 @@ body {
 }
 .fashion__article__simple-bg {
   background-color: #b79b6c;
-  width: 100%;
+  width: 50%;
+  margin-right: 40px;
 }
 .fashion__article__desc {
   width: 80%;
@@ -515,6 +520,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
+    row-gap: 30px;
   }
   .footer__details_container {
     grid-template-columns: repeat(2, 1fr);
@@ -580,6 +586,7 @@ body {
   }
   .new-arrival__container {
     display: flex;
+    justify-content: center;
     padding: 0 8%;
     flex-direction: row-reverse;
   }
@@ -596,7 +603,7 @@ body {
     font-size: 1rem;
   }
   .horror__container__bg {
-    height: calc(60vh - 100px);
+    height: 60vh;
   }
   .brand__social-media {
     margin: 30px 50px;
@@ -699,14 +706,19 @@ body {
     width: 25px;
   }
   .collection__container {
-    display: flex;
     padding: 0 8%;
+    display: flex;
     text-align: left;
+    justify-content: center;
+    align-items: center;
   }
   .collection__desc {
     padding: 15px 10px 15px 0;
     margin-right: 50px;
     font-size: 1.1rem;
+  }
+  .collection__products_container img{
+    width: 15vw;
   }
   .main-heading {
     font-size: 2rem;
@@ -728,7 +740,7 @@ body {
     font-size: 1.2rem;
   }
   .horror__container__bg {
-    height: calc(100vh - 100px);
+    height: 100vh;
   }
   .horror__desc .sub-heading {
     font-size: 1.5rem;
