@@ -125,8 +125,8 @@ body {
 }
 
 .the-sections {
-  /* padding: 20px 0; */
-  margin: 100px 0;
+  margin-top: 100px;
+  margin-bottom: 50px;
   text-align: center;
   letter-spacing: 0.008em;
 }
@@ -157,7 +157,6 @@ body {
 .collection__products {
   margin: 10px 10%;
   position: relative;
-  
 }
 .collection__products_container__product_img {
   background-color: #b7b7b7;
@@ -193,7 +192,7 @@ body {
 .collection__products_container {
   display: none;
 }
-.dots__container{
+.dots__container {
   text-align: center;
 }
 .dot {
@@ -233,10 +232,13 @@ body {
     opacity: 1;
   }
 }
-.prev,.next,.text {
+.prev,
+.next,
+.text {
   font-size: 11px;
 }
-.prev,.next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 25%;
@@ -253,10 +255,9 @@ body {
 .next {
   right: -40px;
 }
-.prev{
+.prev {
   left: -40px;
 }
-
 
 .new-arrival__products {
   display: grid;
@@ -461,7 +462,7 @@ body {
   line-height: 1.6;
 }
 .footer__details_container {
-  padding: 30px 5%;
+  padding: 50px 5%;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 25px;
@@ -572,16 +573,20 @@ body {
     font-size: 1rem;
   }
   .collection__products {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 20px;
-      row-gap: 12px;
-      margin: 10px 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 12px;
+    margin: 10px 10%;
   }
-  .collection__products_container{
+  .collection__products_container {
     display: block;
   }
-  .dots__container, .prev,.next, .active,.fade{
+  .dots__container,
+  .prev,
+  .next,
+  .active,
+  .fade {
     display: none;
   }
   .new-arrival__container {
@@ -717,7 +722,7 @@ body {
     margin-right: 50px;
     font-size: 1.1rem;
   }
-  .collection__products_container img{
+  .collection__products_container img {
     width: 15vw;
   }
   .main-heading {
@@ -758,7 +763,7 @@ body {
   .brand__social-media a {
     font-size: 1rem;
   }
-  .fashion__article{
+  .fashion__article {
     overflow-y: hidden;
   }
   .fashion__article__bg::after {
