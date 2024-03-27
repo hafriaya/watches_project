@@ -130,7 +130,7 @@ body {
   text-align: center;
   letter-spacing: 0.008em;
 }
-.the-sections section {
+.the-sections section:not(.the-sections__properties) {
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -402,6 +402,9 @@ body {
   text-transform: capitalize;
   cursor: pointer;
 }
+.the-sections__properties{
+  margin: 20px 0;
+}
 .properties__container {
   background-color: #ffff;
   padding: 30px 20px;
@@ -440,14 +443,13 @@ body {
   line-height: 1;
 }
 .properties__icon-container {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .properties__icon-container img {
   width: 40px;
 }
 .properties__detail h4 {
   margin: 5px 0;
-  font-weight: 100;
 }
 .properties__detail p {
   font-size: 0.9rem;
