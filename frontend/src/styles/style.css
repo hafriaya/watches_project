@@ -177,7 +177,8 @@ body {
   text-align: left;
   width: 90%;
 }
-.products__descr__main-heading, .products__descr__sub-heading{
+.products__descr__main-heading,
+.products__descr__sub-heading {
   padding: 5px 0;
   font-size: 1.1rem !important;
   font-weight: 400 !important;
@@ -279,6 +280,45 @@ body {
   font-size: 1rem;
   font-weight: 100;
 }
+.new-arrival__product-container__img-container {
+  position: relative;
+  overflow: hidden;
+}
+.new-arrival__product-container__img-container__sale-option {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 8px;
+  padding: 5px;
+  background-color: #b79b6c;
+  color: #ffff;
+  border-radius: 2px;
+  font-size: 70%;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.new-arrival__product-container__button-options {
+  position: absolute;
+  width: 100%;
+  top: 90%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+}
+.new-arrival__product-container__button-options__btn {
+  margin: 20px 10px;
+  padding: 5px 4px;
+  width: 45%;
+  font-size: 0.65rem;
+  background-color: #32353c;
+  color: #ffff;
+  border: none;
+  border-radius: 3px;
+  text-transform: capitalize;
+  cursor: pointer;
+  text-align: center;
+}
 .new-arrival__product-container__detail {
   margin-top: 15px;
   width: 90%;
@@ -297,7 +337,7 @@ body {
 }
 #product_price__old {
   text-decoration-line: line-through;
-  color: #6A707E;
+  color: #6a707e;
 }
 .horror__container {
   position: relative;
@@ -536,6 +576,15 @@ body {
 }
 /* media screen for 600px */
 @media screen and (min-width: 600px) {
+  .new-arrival__product-container__img-container__sale-option {
+    margin: 20px;
+    padding: 5px 15px;
+  }
+  .new-arrival__product-container__button-options__btn {
+    width: 40%;
+    padding: 5px;
+    font-size: 0.8rem;
+  }
   .fashion__article {
     margin: 0;
   }
@@ -591,7 +640,8 @@ body {
   .main__shipping-details {
     font-size: 0.75rem;
   }
-  .products__descr__main-heading, .products__descr__sub-heading{
+  .products__descr__main-heading,
+  .products__descr__sub-heading {
     font-size: 1.2rem !important;
     font-weight: 400 !important;
   }
@@ -762,9 +812,17 @@ body {
   .collection__products {
     margin: 10px 5px;
   }
-  .products__descr__main-heading, .products__descr__sub-heading{
+  .products__descr__main-heading,
+  .products__descr__sub-heading {
     font-size: 1.2rem !important;
     font-weight: 400 !important;
+  }
+  .new-arrival__product-container__img-container__sale-option {
+    font-size: 90%;
+  }
+  .new-arrival__product-container__button-options__btn {
+    padding: 8px;
+    font-size: 1rem;
   }
   .new-arrival__product-container__detail {
     font-size: 1.2rem;
