@@ -357,7 +357,7 @@ body {
   margin-top: 30px;
 }
 .fashion__article {
-  /* margin: 20px 0; */
+  margin: 20px 0;
   position: relative;
 }
 .fashion__article__bg {
@@ -385,24 +385,35 @@ body {
   text-align: left;
   font-size: 0.8rem;
 }
-
-.fashion__sub-heading,
+.fashion__article__bg-4__desc__right-side {
+  display: none;
+}
 .fashion__main-heading {
+  padding: 10px 0;
+}
+.fashion__sub-heading {
   padding: 5px 0;
+  font-size: 1.1rem;
   font-weight: 400;
 }
 .read-more_btn {
   margin: 15px 0;
   padding: 8px;
-  width: 100px;
+  width: 120px;
+  height: 40px;
   background-color: #32353c;
   color: #ffff;
   border: none;
   border-radius: 3px;
   text-transform: capitalize;
   cursor: pointer;
+  align-items: center;
 }
-.the-sections__properties{
+#btn_ios-arrow-down {
+  width: 5px;
+  margin: 0 5px;
+}
+.the-sections__properties {
   margin: 20px 0;
 }
 .properties__container {
@@ -519,6 +530,9 @@ body {
 }
 /* media screen for 600px */
 @media screen and (min-width: 600px) {
+  .fashion__article {
+    margin: 0;
+  }
   .fashion__articles__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -792,7 +806,12 @@ body {
     font-size: 1rem;
   }
   .fashion__article__bg-4__desc {
-    width: 40%;
+    width: 30%;
+  }
+  .fashion__article__bg-4__desc__right-side {
+    display: block;
+    top: 45%;
+    left: 65%;
   }
   .footer__details_container {
     grid-template-columns: repeat(4, 1fr);
