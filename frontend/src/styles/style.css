@@ -176,13 +176,11 @@ body {
 .collection__products__descr__details {
   text-align: left;
   width: 90%;
-  font-size: 1.1rem;
-  font-weight: 100;
 }
-.collection__products__descr__main-heading, .collection__products__descr__sub-heading{
+.products__descr__main-heading, .products__descr__sub-heading{
   padding: 5px 0;
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1.1rem !important;
+  font-weight: 400 !important;
 }
 .collection__products__descr__details p {
   margin: 5px 0;
@@ -283,6 +281,7 @@ body {
 }
 .new-arrival__product-container__detail {
   margin-top: 15px;
+  width: 90%;
 }
 #new-arrival__main-img__model21 {
   height: 100%;
@@ -298,6 +297,7 @@ body {
 }
 #product_price__old {
   text-decoration-line: line-through;
+  color: #6A707E;
 }
 .horror__container {
   position: relative;
@@ -591,8 +591,9 @@ body {
   .main__shipping-details {
     font-size: 0.75rem;
   }
-  .collection__products__descr__details {
-    font-size: 1rem;
+  .products__descr__main-heading, .products__descr__sub-heading{
+    font-size: 1.2rem !important;
+    font-weight: 400 !important;
   }
   .collection__products {
     display: grid;
@@ -761,8 +762,9 @@ body {
   .collection__products {
     margin: 10px 5px;
   }
-  .collection__products__descr__details {
-    font-size: 1.1rem;
+  .products__descr__main-heading, .products__descr__sub-heading{
+    font-size: 1.2rem !important;
+    font-weight: 400 !important;
   }
   .new-arrival__product-container__detail {
     font-size: 1.2rem;
