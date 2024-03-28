@@ -175,8 +175,14 @@ body {
 }
 .collection__products__descr__details {
   text-align: left;
+  width: 90%;
   font-size: 1.1rem;
   font-weight: 100;
+}
+.collection__products__descr__main-heading, .collection__products__descr__sub-heading{
+  padding: 5px 0;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 .collection__products__descr__details p {
   margin: 5px 0;
@@ -731,11 +737,11 @@ body {
     display: flex;
     text-align: left;
     justify-content: center;
-    align-items: center;
   }
   .collection__desc {
     padding: 15px 10px 15px 0;
     margin-right: 50px;
+    width: 20%;
     font-size: 1.1rem;
   }
   .collection__products_container img {
@@ -748,6 +754,7 @@ body {
     font-size: 1.2rem;
   }
   .shopping-btn {
+    margin-top: 30px;
     margin-left: 0;
     width: 120px;
   }
