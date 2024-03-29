@@ -30,6 +30,10 @@ body {
 .to_down_arrow {
   display: none;
 }
+.share_box__container {
+  display: none;
+}
+
 .header__container {
   background-color: #ffffff;
   color: #ffff;
@@ -618,6 +622,8 @@ body {
     position: absolute;
     bottom: 5%;
     left: 50%;
+    width: 50px;
+    height: 50px;
     padding: 20px 15px 10px 15px;
     background-color: #ffff;
     border-radius: 50%;
@@ -626,6 +632,119 @@ body {
   .to_down_arrow img {
     width: 80%;
   }
+
+  .share_box__container {
+    display: block;
+    align-items: center;
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+  }
+  .share_box {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #share_button {
+    display: none;
+  }
+  .sharebtn,
+  .media_icon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  .sharebtn {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #333;
+    font-size: 2em;
+    z-index: 1;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.168);
+  }
+  .share_box__paragraph_wrapper {
+    margin-bottom: 20px;
+    writing-mode: vertical-rl;
+    /* transform: scale(-1); */
+    text-transform: uppercase;
+    font-weight: lighter;
+    position: absolute;
+    top: -70px;
+    transition: all 0.3s;
+  }
+  .sm_list {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .sm_list .media_icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+    font-size: 1.2em;
+  }
+  #share_button:checked ~ .share_box__paragraph_wrapper {
+    transform: translateY(-15em);
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  /* instagram */
+  #share_button:checked ~ .sm_list .media_icon:nth-child(1) {
+    background-color: #dd2553;
+    transition-delay: 0.2s;
+    transform: translateY(-3em);
+  }
+  /* linkedin */
+  #share_button:checked ~ .sm_list .media_icon:nth-child(2) {
+    background-color: #000f94;
+    transition-delay: 0.2s;
+    transform: translateY(-6em);
+  }
+  /* whatsapp */
+  #share_button:checked ~ .sm_list .media_icon:nth-child(3) {
+    background-color: rgb(10, 63, 0);
+    transition-delay: 0.2s;
+    transform: translateY(-9em);
+  }
+  /* facebook */
+  #share_button:checked ~ .sm_list .media_icon:nth-child(4) {
+    background-color: #3b5998;
+    transition-delay: 0.2s;
+    transform: translateY(-12em);
+  }
+  /* Hovering Effects */
+  #share_button:checked ~ .sm_list .media_icon:nth-child(1):hover {
+    background-color: #ffffff;
+    color: #dd2553;
+  }
+  #share_button:checked ~ .sm_list .media_icon:nth-child(2):hover {
+    color: #000f94;
+    background-color: #fff;
+  }
+  #share_button:checked ~ .sm_list .media_icon:nth-child(3):hover {
+    color: rgb(10, 63, 0);
+    background-color: #fff;
+  }
+  #share_button:checked ~ .sm_list .media_icon:nth-child(4):hover {
+    color: #3b5998;
+    background-color: #fff;
+  }
+
   .header__container {
     background-color: rgb(255, 255, 255, 0.7);
     position: absolute;
@@ -653,7 +772,7 @@ body {
     margin: 0 10px;
     width: 120px;
   }
-  .header__cart-side__liked-products{
+  .header__cart-side__liked-products {
     display: block;
     margin-right: 10px;
   }
