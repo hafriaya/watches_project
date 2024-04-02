@@ -3,26 +3,55 @@ var slideIndex = 0;
 var autoOn = true;
 (function () {
   var width = window.innerWidth;
+  var maxWidth = width < 700;
 
   window.addEventListener("resize", function () {
-    if (window.innerWidth !== width) {
-      width = window.innerWidth;
-      if (window.innerWidth < 700) {
+    var currentWidth = window.innerWidth;
+    if (currentWidth >= 700 && maxWidth) {
+      console.log("Width now >= 700, reloading.");
+      window.location.reload(true);
+      return;
+    }
+
+    if (currentWidth !== width) {
+      console.log("hello world");
+      width = currentWidth;
+
+      if (currentWidth < 700) {
+        console.log("the before");
+        if (!maxWidth) {
+          console.log("the after");
+          maxWidth = true;
+          autoSlides();
+        }
+      } else {
+        maxWidth = false;
+      }
+    }
+  });
+
+  window.addEventListener("load", function () {
+    if (window.innerWidth < 700) {
+      console.log("the before (on load)");
+      if (!maxWidth) {
+        console.log("the after (on load)");
+        maxWidth = true;
         autoSlides();
-        window.location.reload(true);
       }
     }
   });
 })();
 
 function autoSlides() {
-  timeOut = timeOut - 20;
+  if (window.innerWidth < 700) {
+    timeOut = timeOut - 20;
 
-  if (autoOn == true && timeOut < 0) {
-    showSlides();
+    if (autoOn == true && timeOut < 0) {
+      showSlides();
+    }
+    setTimeout(autoSlides, 20);
+    console.log("autoSlides is working");
   }
-  setTimeout(autoSlides, 20);
-  console.log("autoSlides is working");
 }
 
 function prevSlide() {
