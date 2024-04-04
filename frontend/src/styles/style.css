@@ -17,6 +17,7 @@ body {
   width: 100%;
   text-align: center;
   color: #000000;
+  overflow-x: hidden;
 }
 .header__bg-container {
   background-image: url(../images/backgrounds/model-2.png);
@@ -535,6 +536,7 @@ body {
   color: #ffff;
   text-align: center;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 .footer__details_container {
   padding: 50px 5%;
