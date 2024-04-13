@@ -154,4 +154,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// remove insta posts slider signature 
+function hideElementByXPath(xpath) {
+  var result = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
+  var element = result.singleNodeValue;
+  if (element) {
+      element.style.display = 'none';
+  } else {
+      console.log('Element not found for XPath:', xpath);
+  }
+}
 
+function checkForTaggboxLink() {
+  var link = document.querySelector('a[href^="https://taggbox.com"]');
+  return link !== null;
+}
+
+// Start an interval that runs every second
+var tagboxInterval = setInterval(function() {
+  if (checkForTaggboxLink()) {
+      // If the link exists, hide elements using the provided XPaths and clear the interval
+      console.log('Taggbox link found. Hiding elements.');
+      hideElementByXPath('/html/body/main/div[2]/section[4]/div/div[2]/div/div/div[1]/div/div/div[1]');
+      hideElementByXPath('/html/body/main/div[2]/section[4]/div/div[2]/div/div/div[2]');
+      
+      clearInterval(tagboxInterval);  // Clear the interval once the elements are hidden
+     
+  }else{}
+}, 500);
